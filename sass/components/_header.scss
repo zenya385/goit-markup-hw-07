@@ -1,0 +1,124 @@
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // &__logo-color-black {
+  //   color: #000000;
+  // }
+
+  // &__logo-web {
+  //   color: $accent-color;
+  // }
+
+  // &__logo-color-black:hover,
+  // &__logologo-color-black:focus {
+  //   color: $accent-color;
+  // }
+}
+
+.menu-nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+
+  .test {
+    position: relative;
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: $accent-color;
+  }
+
+  &__item {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &.current {
+      position: relative;
+      color: $accent-color;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -34px;
+        width: 100%;
+        height: 4px;
+        background: $accent-color;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+// ---------HEASDER CONTACT--------------
+
+.header-contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-text-color;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__link {
+    display: flex;
+    height: 16px;
+    align-items: center;
+    color: $primary-text-color;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    color: $accent-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__icon {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: default;
+    margin-left: 50px;
+  }
+  &__item {
+    align-items: center;
+  }
+
+  &__link &__icon:hover,
+  &__link &__icon:focus {
+    color: $accent-color;
+  }
+}
